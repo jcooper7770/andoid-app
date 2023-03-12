@@ -1,0 +1,42 @@
+{% extends "trampoline/trampoline.html" %}
+
+{% block logging %}
+<br>
+<div class="form-group" align="center">
+  <table align="center">
+    <tr>
+      <td>
+        <form action="{{ url_for('trampoline_log') }}" method="post" id="logger" name="logger" style="text-align:left;">
+
+          <!-- Username -->
+          <div class="form-row">
+            <div class="col-sm-4"><label>Athlete:</label></div>
+            <div class="col">
+              <select id="athlete">
+                <option value="">All athletes</option>
+                {% for athlete in athletes %}
+                <option value="{{athlete}}"{% if athlete == current_athlete %} selected{% endif %}>{{athlete}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        </form>
+
+      </td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
+<br>
+
+<br><br><br>
+
+{% block javascript %}
+<script type="text/javascript">
+$('#athlete').change(function(e) {
+  var athlete = $(this).val();
+  location.href = "?athlete="+athlete
+});
+</script>
+{% endblock %}

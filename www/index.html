@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+
+<!--
+ dev tools: chrome://inspect/#devices
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** ">-->
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <!-- my stuff -->
+        <div id="nav-placeholder"></div>
+        <div class="container" style="background: rgba(255,255,255,0.4); border-radius: 10px; padding-top: 60px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <h1 align="center">Welcome to the Anti-Meta Team Generator!</h1>
+            <p>Here you'll find all the resources you need to become a top-notch Pokemon Go PVP battler, including: learning the current meta in each league, learning counts for each pokemon, and learning popular teams.</p>
+            <div class="rows">
+            <div class="row">
+                <div class="col-md-10 mx-auto mb-4 d-flex justify-content-center">
+                    <div class="card mx-auto w-100">
+                        <div class="card-body">
+                        <h2 id="meta-data" class="card-title">Meta Data</h2>
+                        <p class="card-text">Here you'll find the latest information on the Pokemon Go Battle meta, including the most popular Pokemon, moves, and team compositions.</p>
+                        <p class="card-text">Check back regularly to stay up-to-date on the shifting landscape of competitive Pokemon Go.</p>
+                        </div>
+                        <div class="card-footer">
+                        <a href="/" class="btn btn-primary">Open Meta Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 mx-auto mb-4 d-flex justify-content-center">
+                    <div class="card mx-auto w-100">
+                        <div class="card-body">
+                        <h2 id="about" class="card-title">About</h2>
+                        <p class="card-text">Learn about how to read the meta data and how to use it to build teams.</p>
+                        </div>
+                        <div class="card-footer">
+                        <a href="/about" class="btn btn-primary">Open About page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 mx-auto mb-4 d-flex justify-content-center">
+                <div class="card mx-auto w-100">
+                    <div class="card-body">
+                    <h2 id="move-counts" class="card-title">Move Counts</h2>
+                    <p class="card-text">Learn the counts for all pokemon moves in Pokemon Go. Also create your own move counts infographics!</p>
+                    <p class="card-text">Using move counts is a great way to take the next step to improving on your skills during battles. Many top battlers have these metrics memorized while some keep an infographic on their screen during battles. Use this tool to optimize your performance and give yourself the edge in battle.</p>
+                    </div>
+                    <div class="card-footer">
+                    <a href="/move_counts" class="btn btn-primary">Open Move Counts</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 mx-auto mb-4 d-flex justify-content-center">
+                <div class="card mx-auto w-100">
+                    <div class="card-body">
+                    <h2 id="go-battle-log" class="card-title">Go Battle Log</h2>
+                    <p class="card-text">Keep track of your battle results and see how you're improving over time. Use this tool to track your progress and identify areas for improvement.</p>
+                    <p class="card-text">The Anti-Meta Team Generator uses data from GoBattleLog to generate the meta and anti-meta data.</p>
+                    </div>
+                    <div class="card-footer">
+                    <a href="https://gobattlelog.com/" class="btn btn-primary">Visit GoBattleLog</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 mx-auto mb-4 d-flex justify-content-center">
+                <div class="card mx-auto w-100">
+                    <div class="card-body">
+                    <h2 id="pvpoke" class="card-title">Pvpoke</h2>
+                    <p class="card-text">Pvpoke is an open-source tool for simulating, ranking, and building teams for Pokemon GO PvP (player versus player) battles.</p>
+                    </div>
+                    <div class="card-footer">
+                    <a href="https://pvpoke.com/" class="btn btn-primary">Visit Pvpoke</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 mx-auto mb-4 d-flex justify-content-center">
+                <div class="card mx-auto w-100">
+                    <div class="card-body">
+                    <h2 id="pvpoke" class="card-title">Support me on Patreon</h2>
+                    <p class="card-text">Please consider supporting me on my <a target="_blank" href="http://patreon.com/itsFlippinCoop">Patreon</a>. This will help encourage me to continue working on my website and producing move count infographics.</p>
+                    </div>
+                    <div class="card-footer">
+                    <a href="http://patreon.com/itsFlippinCoop" class="btn btn-primary">Visit Patreon</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        <!-- Cordova stuff -->
+        <!--
+        <div class="container app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <table border="1" class="table table-striped">
+                <thead class="thead-dark">
+                    <th colspan="2">Test header</th>
+                </thead>
+                <tbody>
+                    <tr><td>Hello</td><td>World</td></tr>
+                    <tr><td>Hello</td><td>World</td></tr>
+                </tbody>
+            </table>
+            <input class="form-control" type="text" \>
+            <button type="submit" class="btn btn-primary">Testing</button>
+
+        </div>
+        -->
+        <!--<script src="cordova.js"></script>-->
+        <script src="js/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+    </body>
+</html>

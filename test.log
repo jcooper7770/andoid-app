@@ -1,0 +1,2497 @@
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+127.0.0.1 - - [26/Feb/2023 23:29:49] "[33mGET /run HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:29:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:29:59] "[32mGET /logger HTTP/1.1[0m" 302 -
+127.0.0.1 - - [26/Feb/2023 23:30:00] "[35m[1mGET /logger/landing HTTP/1.1[0m" 500 -
+127.0.0.1 - - [26/Feb/2023 23:30:00] "GET /logger/landing?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:30:00] "GET /logger/landing?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:30:00] "GET /logger/landing?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:30:01] "[36mGET /logger/landing?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Feb/2023 23:30:01] "GET /logger/landing?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:31:00] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:31:00] "[33mGET /css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:00] "[33mGET /css/trampoline_styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:01] "[33mGET /images/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:31:24] "[33mGET /css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:24] "[33mGET /css/trampoline_styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:24] "[33mGET /images/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:31] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:31:31] "[33mGET /css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:31] "[33mGET /css/trampoline_styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:31:31] "[33mGET /images/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:07] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:32:07] "[33mGET /css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:07] "[33mGET /css/trampoline_styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:07] "[33mGET /images/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:07] "[33mGET /logger/img/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:24] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:32:24] "[33mGET /css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:24] "[33mGET /css/trampoline_styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:24] "[33mGET /images/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:24] "[33mGET /img/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:34] "[33mGET /css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:32:34] "[33mGET /css/trampoline_styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:33:00] "[33mGET /img/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Feb/2023 23:34:11] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:11] "GET /css/background.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:11] "GET /css/trampoline_styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:12] "GET /images/flipLogo.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:30] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:30] "GET /css/background.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:30] "GET /css/trampoline_styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:30] "GET /images/flipLogo.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [26/Feb/2023 23:34:40] "GET /logger HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:40] "GET /css/background.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:40] "GET /css/trampoline_styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:34:40] "GET /images/flipLogo.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:37:04] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:37:48] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:39:53] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:43:22] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:44:28] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:44:46] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:45:01] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2023 23:48:07] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+Using test data table
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+127.0.0.1 - - [27/Feb/2023 00:29:11] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:29:11] "[33mGET /logger/css/background.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Feb/2023 00:29:11] "GET /css/background.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:29:11] "GET /css/trampoline_styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:29:11] "[33mGET /logger/img/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Feb/2023 00:29:11] "[33mGET /logger/img/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Feb/2023 00:29:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Feb/2023 00:30:03] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+127.0.0.1 - - [27/Feb/2023 00:42:07] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+127.0.0.1 - - [27/Feb/2023 00:42:07] code 400, message Bad request version ('\x04\x81¹-\x8d\x00')
+127.0.0.1 - - [27/Feb/2023 00:42:07] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x86\x15')
+127.0.0.1 - - [27/Feb/2023 00:42:07] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+127.0.0.1 - - [27/Feb/2023 00:42:22] "GET /logger/landing HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:42:34] "GET /logger HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:42:34] "GET /css/trampoline_styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:42:34] "GET /css/background.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Feb/2023 00:42:34] "[33mGET /img/flipLogo.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Feb/2023 00:42:58] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [27/Feb/2023 20:57:31] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 20:57:31] "[33mGET /logger/css/background.css HTTP/1.1[0m" 404 -
+192.168.0.104 - - [27/Feb/2023 20:57:31] "GET /css/background.css HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 20:57:31] "GET /css/trampoline_styles.css HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 20:57:31] "[33mGET /logger/img/flipLogo.png HTTP/1.1[0m" 404 -
+192.168.0.104 - - [27/Feb/2023 20:57:32] "[33mGET /logger/img/flipLogo.png HTTP/1.1[0m" 404 -
+192.168.0.104 - - [27/Feb/2023 20:57:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.0.104 - - [27/Feb/2023 20:57:39] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:06:22] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:06:30] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:06:31] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:06:52] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:07:12] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:07:13] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:08:19] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:09:25] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:09:34] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:09:36] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:09:48] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:09:49] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:12:07] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:12:08] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:16:30] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:17:47] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:18:24] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:18:25] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:18:58] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:18:59] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:19:47] "GET /pokemon HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:19:53] "GET /pokemon HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:20:23] "GET /pokemon HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:21:04] "[33mGET /pokemon/landing HTTP/1.1[0m" 404 -
+192.168.0.104 - - [27/Feb/2023 21:21:20] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:21:22] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:22:49] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:23:09] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:23:17] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:23:28] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:23:30] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [27/Feb/2023 21:24:27] "[32mGET /logger HTTP/1.1[0m" 302 -
+192.168.0.104 - - [27/Feb/2023 21:24:29] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:24:56] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:25:02] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:25:08] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [27/Feb/2023 21:25:51] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:27:22] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:27:31] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:27:53] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:27:59] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:28:54] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:29:18] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [27/Feb/2023 21:31:55] "GET /logger HTTP/1.1" 200 -
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [28/Feb/2023 22:07:21] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:07:37] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:08:06] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:08:13] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:08:18] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:08:39] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:08:45] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:08:51] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:20:53] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:20:59] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:21:05] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:21:13] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:26:15] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:26:23] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:29:56] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:36:47] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:36:52] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:46:59] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:47:06] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:47:13] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:49:07] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:50:38] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:51:00] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:51:17] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:51:28] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:57:54] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:58:06] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:58:13] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:58:29] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:58:29] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 22:58:29] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:07:16] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:07:23] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:18:04] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:18:12] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:18:17] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:18:24] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:18:31] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:18:41] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:20:59] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:21:09] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:21:19] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:26:04] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:26:59] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:27:07] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:27:14] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:28:33] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:30:39] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:30:48] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:30:57] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:04] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:04] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:04] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:04] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:04] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:04] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:06] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:06] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:06] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:34:06] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:15] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:15] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:15] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:15] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:15] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:15] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:17] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:17] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:17] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:17] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:34] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:34] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:34] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:34] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:34] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:34] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:36] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:36] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:36] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:38:36] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:41:20] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:38] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:38] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:38] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:38] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:38] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:38] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:40] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:40] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:40] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:42:40] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:27] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:27] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:28] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:28] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:28] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:28] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:29] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:29] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:30] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:50:30] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:42] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:42] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:42] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:42] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:42] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:42] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:44] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:44] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:44] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [28/Feb/2023 23:55:44] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:08] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:08] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:08] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:08] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:08] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:08] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:10] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:10] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:10] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:00:10] "GET /logger HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:23:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:39] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:39] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:39] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:39] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:49] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:23:56] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:56] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:56] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:56] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:56] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:56] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:58] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:58] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:58] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:23:58] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:22] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:22] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:22] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:22] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:22] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:22] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:23] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:23] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:23] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:25:23] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:26:50] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:26:50] "GET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:26:50] "GET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:26:50] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:26:51] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:27:02] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:27:02] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:27:02] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:27:02] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:27:02] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:27:50] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:27:51] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:27:51] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:27:51] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:27:51] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:28:11] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:29:33] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:29:33] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:29:33] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:29:33] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:29:33] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:29:40] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:29:40] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:29:40] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:29:40] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:29:40] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:31:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:31:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:32:12] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:32:37] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:32:37] "GET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:32:37] "GET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:32:37] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:32:37] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:33:06] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:34:04] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:34:04] "GET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:34:04] "GET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:34:04] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:34:04] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:35:01] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:35:01] "GET /logger2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:35:01] "[36mGET /logger2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+192.168.0.104 - - [01/Mar/2023 00:35:01] "GET /logger2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:35:43] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:35:58] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:38:37] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:38:50] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:40:02] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:40:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /login HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:49] "GET /login HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:41:50] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:41:50] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:42:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:42:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:42:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:42:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:42:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:42:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:42:15] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:42:15] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:42:15] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:42:16] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+192.168.0.104 - - [01/Mar/2023 00:50:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:51:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:52:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:52:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:52:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:52:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:56:21] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01¹')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('°ñwdX"1Òa#÷\x8cõN~À-Yáy^\x82¦\x86ÀâIZð®(ë\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¨Ów\x9a\x15\x13ÂÌ')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('\x7fö\x90ËÛºô»^\x95\x7f7\x87\x19\x98ÙY®\x009ö\x81\x00"')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x9a\x9a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('\x17\x93ÀzV<x^SÝ\x9e·\x94\x98ð\x00"\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ºº\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('\x8fb\x00"**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('\x18\x96\x00"êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ªª\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x13Ê')
+192.168.0.104 - - [01/Mar/2023 00:58:15] "[31m[1m  üÊ[0m" 400 -
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93::\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:15] code 400, message Bad request version ('\x9f\x06î##xÝ\x16\x97yai5Þ\x00"ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:16] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93êê\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:16] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x032\x171"\x7fØmÝøTQ6N\x8a¶Ó\x04ô\x81EÙ')
+192.168.0.104 - - [01/Mar/2023 00:58:16] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ªª\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:16] code 400, message Bad request version ('\x83\x1aôìÊH7¼\x96\x86\x02\x00"ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:16] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:16] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x84;]\x0fÚ*\x16oÖÜ')
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1234
+ * Running on http://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('ÒÂïuÌý\x81b£giÕ*1¸\'£\x92iÒ\x1abë`\x80¡Õk4K´T\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x8a\x8a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('À>%õt\x94Ùídøº\x18ÐÈ\x0eSú:\x04!\x8bBZ&\x1b\\Òö_\x9c\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93::\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('$øç{\x84ÕÌ\x13\x8100ò\x93\x886§²J=¿±6mD²À\x8e\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÚÚ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03+¼8¯±XQ9Ð(«\x0eVú¯[\x10J7^\x9a!>à»¢ØV\x07\x81ÑH')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('Pä\x80º¸\x8c')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('{±\x8a')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('¤7\x82\x84\x81¥NWÒ\x05ô\x00"JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('\x9b«\x92\x90<©\x8còC\x13R')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('ãÄçknXÿñÖZgìè³aàQ°Ë×ïH\x86«\x12\x00"\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03*Ï3\x9c\x87\x80')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('Ç\x9a\x9d¤\x9f\x895\x9eùÇUàRÐ6¼\x00"\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x0374ÿ¡M-\x0b')
+192.168.0.104 - - [01/Mar/2023 00:58:50] "[31m[1m  ü74ÿ¡M-[0m" 400 -
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03øùÿ\x1bÊoMZÑÊÆX{R¿O#HÃîD0OÕ.\xad\x93Ìì\x190Ó')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:58:50] code 400, message Bad request version ('\x7f£e\x87\x02ÈâôîX³+YwqRã@\x02g¹\x8e\x1b\x9b\x19Sg^Bü\x10&\x00"')
+192.168.0.104 - - [01/Mar/2023 00:59:30] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01¾JJ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00\x00\x17\x00\x00\x00')
+192.168.0.104 - - [01/Mar/2023 00:59:30] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+192.168.0.104 - - [01/Mar/2023 00:59:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 00:59:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.0.104 - - [01/Mar/2023 01:01:43] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:43] code 400, message Bad request version ('ÍÊ©\x9cxÍT\x0föG\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x9a\x9a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x1b½')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ºº\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03%°M\x0e\x86w\x9eY¶Ôt7g®aùl\x94\x9a.\x7fuE:.uy²Î3ý\x8a')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('§o\x8ePô\x8e\x07«T\x00L&0\x97')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x84vhJ8\x95zï\x96,s¡m\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93jj\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\'\x1a\x99ÏåÝ±w\x00?\x9dÊ\x93»\x7f\x8c¨\x00"êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('ìÓ\x93\x12©\x8f\x94©î%<\x80\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93jj\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x93°â|yÔÎ"á¦Ì\x8cf¢Ú¿ØG\x97Z¿âÝP¹:JÉ\x80¨\x1aP\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:44] code 400, message Bad request version ('Ö;d\x92Wô;Ëf0ZúÙ>\x7f}\x18\x88#\x81¬´\x80õ\x9eÑä²vbh¤\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:45] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:45] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÌVïì¾\x8cÌ')
+192.168.0.104 - - [01/Mar/2023 01:01:45] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ªª\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:01:45] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03od;ÀWhô\x94R\x80ç\x0e')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93úú\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('øÿ{\x9be¯\x97\x88§<¬÷\x00"ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('\x99iº\x14_\'Á`\x8b´/Íü»\x05÷¦a$=<½j\x07ø©¬ù\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('èqy;ÔA\x1a\x92\x89b\x9b\x04:zLhûwm×O\x12ô¿\x00"êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x1a\x1a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:19] code 400, message Bad request version ('\x93B\x0eïpë\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('ÑMÉ\x8b\x98B\x99x1\x00"**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('ùQ¹h\x88\x10e\x99A')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('ýÞéQ\x149û\x82%oà\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('Y\x90ò¹Ô/RãÆéÒ#F\x17Ùü\x87¦oH\x17]\x1b*gÙP\x9d<\xad¸\x90\x00"\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03øË§¢g')
+192.168.0.104 - - [01/Mar/2023 01:06:20] "[31m[1m  üøË§¢g[0m" 400 -
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ("'\x11Óâ\x07©,ÞB¤n")
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:20] code 400, message Bad request version ('\x15T\x8eèE\x8c\x18\x1bX*DÊ«¨\x8f\x0eq\x02}²ãXBQW½«L\x131Ø[\x00"\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:53] code 400, message Bad request version ('uOmJñ')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('T¥¸¨,¿Îh<\x02Mx\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ªôd\x94ÔU\x93ÙÞ;\x00\x1e')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x89iÐL\x96é\x8b6')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x1a\x1a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('\x16´¯\x00"ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('\x15¥/\x00"\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x9a\x9a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('@Y~`ê3k>X\x08\x08rñ\x97ãy\x89\x04\x01Z6HAø\x96,2L»bP?\x00"ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93úú\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('øíS¸5Ð\x91ôb)î²Ô\x9eDêK\x00"**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('¹ÌÝ}P|ìH\x89\x81\x9eóÖ\x06«(B\x8fï\x90\x99¶D\x17\x94kÅ²aú©\x02\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('¯E·dT\x89®,Ní·ìS¸\x00"**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93jj\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('#Þ:\x0e]h:fÄ\x00"ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:54] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:55] code 400, message Bad request version ('ô\x11#`V\x11Å\x18ù¸Ñiâ¨ó*\x93SË\x11\x83Â\'\x8bK\x01)\x00"úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:55] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ºº\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:06:55] code 400, message Bad request version ('üvbrÜX£\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93úú\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('ª©J')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03(sRxôoOÂw(³\x97\x87\x03\x883Ã¾')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('\x15êû\xad?ÂÕ,¦í\\ô\x94¾kFã-EÙT¢\x15\x88Éà¶î\x9aDM\x9d\x00"')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('^u\x000\x87R\x945\x1b\x00"')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93êê\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('Y@\x89B<a\x98ÏéÉ]I¯\x8d[Ä§ã')
+192.168.0.104 - - [01/Mar/2023 01:10:27] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('CØÚ\xad\x04\x7f´§¢l\xad`\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93êê\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('Ä´\x81é;²÷¯pàv\x00"ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x8d?\x89\x8cØ\x93\x98\x98RÑ®5\x80\x96')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('zV\x00"::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03v>Ç4V<v½\x9f\x81Î#îã')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('¼ö')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ºº\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('\x00"úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93JJ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:10:28] code 400, message Bad request version ('$r,Æ´\x18utdÞ\x95Gp\x10|\x9dÂÂ`=þ®Í\x99,×lÕBH\'å\x00"úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('xç·Ö\x0e(\x07\x8e\x8a\x00"ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÚÚ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ì\x89ÒrãÃvÎï±Íï\x05\x8dHåv)w\x10×\x15Ã\x96=Òç\x99\x89ò~')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x9a\x9a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('ßJ®1u\x96\x8fÊ\x01×\x19&âí\x00"ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('3\x99Ù\x06\x92ì\xadghtÄ\x00"ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x8e\x0f³\x91ã¸Ö#fÇë\x98ãÞ\x10Ð^A*')
+192.168.0.104 - - [01/Mar/2023 01:11:07] code 400, message Bad request version ('ÕJ\x9b!\x9døu^\x9aV~´ïh\x9c')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('\x8a\x14\x19®ö\x00"ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x8a\x8a\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('×¸\x83aÕ\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03³@,Õ2õ~')
+192.168.0.104 - - [01/Mar/2023 01:11:08] "[31m[1m  ü³@,Õ2õ~[0m" 400 -
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03')
+192.168.0.104 - - [01/Mar/2023 01:11:08] "[31m[1m  ü[0m" 400 -
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93úú\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+192.168.0.104 - - [01/Mar/2023 01:11:08] code 400, message Bad request version ('\x9a²áÆÝ\x166MlÄX²ç\x08Am½\x1aD\x1bÈÎäï¬\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [01/Mar/2023 01:14:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:15:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:20:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:20:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:20:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:20:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:20:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:20:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:21:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [01/Mar/2023 01:21:34] "GET /logger2 HTTP/1.1" 200 -
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [03/Mar/2023 10:50:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 10:50:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 10:51:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:13:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:13:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:13:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:13:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:13:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:14:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:14:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:14:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:14:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:14:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:16:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:16:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:16:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:18:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:18:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:23:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:23:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:45:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:45:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:45:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:45:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:46:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:46:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:46:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:46:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:46:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:46:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:49:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:50:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [03/Mar/2023 11:50:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 18:52:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:01:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:01:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:01:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:06:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:09:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:09:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:09:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:13:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:25:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:34:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:41:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:41:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:41:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:41:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:46:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:50:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:50:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 19:58:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:00:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:02:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:03:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:08:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:08:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:08:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:14:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:14:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:14:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:14:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:16:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:19:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:19:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:19:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:19:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:27:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:29:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:34:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:38:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:45:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:47:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:47:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:47:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:52:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:52:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:52:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:53:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 20:58:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:02:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:02:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:02:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:02:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:02:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:06:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:13:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:15:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:17:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:19:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:19:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:19:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:19:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:24:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:24:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:31:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:32:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:32:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:32:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:37:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:37:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:37:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:37:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:57:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:57:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 21:57:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:04:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:04:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:04:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:10:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:10:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:16:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:20:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:20:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:20:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:20:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:20:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:20:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:21:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:21:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:21:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:21:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:22:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:39:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:39:40] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:39:42] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:42:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:42:26] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:42:28] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:42:28] "OPTIONS /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:42:30] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:45:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:46:03] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:46:05] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:46:05] "OPTIONS /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:46:07] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:46:35] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:46:37] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:46:37] "OPTIONS /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:46:39] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:49:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:49:44] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:49:46] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:49:46] "OPTIONS /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:49:48] "GET /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:50:20] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:50:22] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:50:22] "OPTIONS /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:50:24] "GET /logger HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 22:53:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:53:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:54:12] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 22:54:15] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:54:15] "OPTIONS /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:54:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:54:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:54:24] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 22:58:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:58:57] "OPTIONS /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:58:57] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 22:59:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 22:59:23] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 23:00:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:00:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:00:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:00:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:00:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:00:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:00:47] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: None
+['None']
+192.168.0.104 - - [05/Mar/2023 23:00:50] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 23:00:52] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 23:08:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:08:57] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<']
+192.168.0.104 - - [05/Mar/2023 23:09:00] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 23:09:02] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\application\\trampoline\\trampoline.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 23:11:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:11:50] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<']
+1: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+0:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+192.168.0.104 - - [05/Mar/2023 23:11:54] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 23:11:54] "OPTIONS /logger HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:11:56] "GET /logger HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 23:14:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:14:30] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12003<']
+1: [12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)]
+0:
+	12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)
+3.0 flips - 1.5 twists (2.2)
+192.168.0.104 - - [05/Mar/2023 23:14:34] "[32mPOST /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 23:14:34] "OPTIONS /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:14:36] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 23:16:15] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12003<']
+1: [12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)]
+0:
+	12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)
+3.0 flips - 1.5 twists (2.2)
+192.168.0.104 - - [05/Mar/2023 23:16:19] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:16:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:16:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:16:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:17:13] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12003< 811< 12001< 12101o 12001o 813< 805< 831< 803< 822/']
+1: [12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2), 811< - 2.0 flips - [0.5, 0.5] twists - < position (1.4), 12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7), 813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6), 805< - 2.0 flips - [0.0, 2.5] twists - < position (1.7), 831< - 2.0 flips - [1.5, 0.5] twists - < position (1.6), 803< - 2.0 flips - [0.0, 1.5] twists - < position (1.5), 822/ - 2.0 flips - [1.0, 1.0] twists - / position (1.6)]
+0:
+	12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)
+	811< - 2.0 flips - [0.5, 0.5] twists - < position (1.4)
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+	813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6)
+	805< - 2.0 flips - [0.0, 2.5] twists - < position (1.7)
+	831< - 2.0 flips - [1.5, 0.5] twists - < position (1.6)
+	803< - 2.0 flips - [0.0, 1.5] twists - < position (1.5)
+	822/ - 2.0 flips - [1.0, 1.0] twists - / position (1.6)
+24.0 flips - 14.5 twists (17.1)
+192.168.0.104 - - [05/Mar/2023 23:17:17] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:17:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:17:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:17:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:17:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:21:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:21:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:21:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:21:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:21:33] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12000< 12000/']
+1: [12000< - 3.0 flips - [0.0, 0.0, 0.0] twists - < position (1.9), 12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)]
+0:
+	12000< - 3.0 flips - [0.0, 0.0, 0.0] twists - < position (1.9)
+	12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)
+6.0 flips - 0.0 twists (3.8)
+192.168.0.104 - - [05/Mar/2023 23:21:37] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:21:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:23:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:23:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:23:31] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001o']
+1: [12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+0:
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+3.0 flips - 0.5 twists (1.7)
+192.168.0.104 - - [05/Mar/2023 23:23:35] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:23:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:23:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:20] "OPTIONS /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:26] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001o']
+1: []
+2: [12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+3.0 flips - 0.5 twists (1.7)
+192.168.0.104 - - [05/Mar/2023 23:26:30] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:26:58] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['# testing\n12001< 12101o 12001o']
+1: []
+2: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+9.0 flips - 2.0 twists (5.5)
+192.168.0.104 - - [05/Mar/2023 23:27:02] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:27] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 23:27:27] "[32mGET /logout HTTP/1.1[0m" 302 -
+192.168.0.104 - - [05/Mar/2023 23:27:27] "GET /login HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:27:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:28:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:29:04] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<\n# test comment']
+1: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+0:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+192.168.0.104 - - [05/Mar/2023 23:29:08] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:29:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:29:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:29:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:29:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:33:31] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<']
+1: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+0:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+192.168.0.104 - - [05/Mar/2023 23:33:34] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:33:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:33:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:33:44] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [05/Mar/2023 23:37:25] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001< 12101o 12001o']
+1: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+0:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+9.0 flips - 2.0 twists (5.5)
+192.168.0.104 - - [05/Mar/2023 23:37:29] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:37:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:39:15] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<']
+1: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+0:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+192.168.0.104 - - [05/Mar/2023 23:39:18] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:39:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:35] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12000/']
+1: [12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)]
+0:
+	12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)
+3.0 flips - 0.0 twists (1.9)
+192.168.0.104 - - [05/Mar/2023 23:41:39] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:41:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:42:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:42:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:42:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:42:55] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12101<']
+1: [12101< - 3.0 flips - [0.5, 0.0, 0.5] twists - < position (2.1)]
+0:
+	12101< - 3.0 flips - [0.5, 0.0, 0.5] twists - < position (2.1)
+3.0 flips - 1.0 twists (2.1)
+192.168.0.104 - - [05/Mar/2023 23:42:59] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:43:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:43:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:43:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:43:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:43:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [05/Mar/2023 23:43:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:35:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:43:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:43:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:43:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:43:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:46:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:46:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:46:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:49:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:49:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:58:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 19:58:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:07:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:07:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:08:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:09:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:09:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:12:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:13:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:13:51] "GET /logger2 HTTP/1.1" 200 -
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:21:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:22:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:22:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:23:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:25:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:25:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:29:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:32:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:32:53] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:36:29] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:36:50] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:39:09] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:40:06] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:40:46] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:41:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:41:41] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:42:35] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:43:28] "[35m[1mGET /logger2 HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:45:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:45:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:45:55] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:51:22] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [06/Mar/2023 20:51:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:51:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:52:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:56:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:57:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:57:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 20:57:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:10:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:10:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:11:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:14:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:17:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:17:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:17:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:19:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:19:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:20:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:21:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:21:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:21:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [06/Mar/2023 21:22:57] "GET /logger2 HTTP/1.1" 200 -
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [07/Mar/2023 21:12:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:13:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:13:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:26:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:26:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:26:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:27:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:27:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:10] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<']
+1: []
+2: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+192.168.0.104 - - [07/Mar/2023 21:28:14] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:28:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:29:37] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 21:29:41] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:29:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:30:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 21:30:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:25:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:25:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:25:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:25:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:25:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:25:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:26:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:27:14] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 22:27:21] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:51:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:51:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:51:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:51:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:51:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:52:05] "OPTIONS /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:54:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:54:24] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 22:54:29] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:54:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:54:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:57:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:57:33] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 22:57:38] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 22:57:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:07:28] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 23:07:33] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:07:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:08:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:38:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:20] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 23:39:24] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:39:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:45:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:45:12] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 23:45:16] "POST /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [07/Mar/2023 23:49:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:49:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:49:46] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [07/Mar/2023 23:52:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:52:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:52:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:52:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:53:15] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [07/Mar/2023 23:53:19] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:53:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [07/Mar/2023 23:53:34] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [08/Mar/2023 00:04:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:04:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:04:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:06:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:06:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:06:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:06:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:06:23] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:06:28] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:06:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:16:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:16:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:16:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:16:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:16:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:17:18] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:17:22] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:17:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:17:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:17:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:17:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:17:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:21:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:22:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:22:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:29:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:34:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:34:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:35:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:35:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:35:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:35:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:35:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:36:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:36:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:36:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:36:27] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:36:31] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:36:42] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [08/Mar/2023 00:41:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:41:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:41:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:41:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:41:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:41:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:41:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:42:07] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:42:12] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:43:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:43:48] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:43:52] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:44:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:45:11] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:45:15] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:48:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:54:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:54:41] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:54:44] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:54:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:55:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:55:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:56:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:56:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:56:15] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:56:18] "POST /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [08/Mar/2023 00:57:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:57:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:57:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:58:12] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 00:58:16] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:58:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 00:58:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:01:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:01:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:01:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:01:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:01:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:01:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:39] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 01:02:43] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:02:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:03:00] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [08/Mar/2023 01:04:29] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 01:04:33] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:04:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:04:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:04:49] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [08/Mar/2023 01:06:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:06:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:06:40] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 01:06:44] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:06:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:06:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:07:01] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['None']
+192.168.0.104 - - [08/Mar/2023 01:07:06] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:07:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [08/Mar/2023 01:07:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:20:08] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['40ooooo 12001o\n12001<']
+1: []
+2: [40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+3: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+8.0 flips - 0.5 twists (4.2)
+2:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+192.168.0.104 - - [09/Mar/2023 21:20:18] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:20:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:31:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:31:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:31:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:32:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:32:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:32:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:32:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:39:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:44:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:44:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:45:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 21:56:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:08:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:11:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:11:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:11:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:14:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:15:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:40:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:40:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:40:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:40:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:40:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:43:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:43:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:43:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:43:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:43:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:43:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:49:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:49:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:49:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:51:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:51:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:51:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:51:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:52:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:52:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:59:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:59:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:59:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:59:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 22:59:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:02:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:07:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:07:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:08:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:08:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:09:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:09:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:09:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:14:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:18:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:18:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:18:39] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [09/Mar/2023 23:29:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:31:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:31:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:02] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['# test note\n40o 40o 40o 40o 40o 12001o\n12001< 12101o']
+1: []
+2: [40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+3: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+8.0 flips - 0.5 twists (4.2)
+2:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+6.0 flips - 1.5 twists (3.8)
+192.168.0.104 - - [09/Mar/2023 23:33:07] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:33:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:34:07] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['# test note\n40o 40o 40o 40o 40o 12001o\n12001< 12101o 12001o\n803<']
+1: []
+2: [40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 40o - 1.0 flips - [0.0] twists - o position (0.5), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+3: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+4: [803< - 2.0 flips - [0.0, 1.5] twists - < position (1.5)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	40o - 1.0 flips - [0.0] twists - o position (0.5)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+8.0 flips - 0.5 twists (4.2)
+2:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+9.0 flips - 2.0 twists (5.5)
+3:
+	803< - 2.0 flips - [0.0, 1.5] twists - < position (1.5)
+2.0 flips - 1.5 twists (1.5)
+192.168.0.104 - - [09/Mar/2023 23:34:12] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:34:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:34:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:34:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:34:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:34:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:41:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:41:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:43:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:43:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:45:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:45:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:45:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:45:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:49:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:49:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:49:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:49:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:54:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:54:44] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001<\n12001<\n12003<\n12003<\n12003< 811< 12001< 12101o 12001o 813< 805< 831< 803< 822/\n12000< 12000/\n12001o\n\n# dfgdfgdfg\n12001o\n\n# testing\n12001< 12101o 12001o\n12001<\n# test comment\n12001<\n12001< 12101o 12001o\n12001<\n12000/']
+1: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+2: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+3: [12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)]
+4: [12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)]
+5: [12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2), 811< - 2.0 flips - [0.5, 0.5] twists - < position (1.4), 12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7), 813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6), 805< - 2.0 flips - [0.0, 2.5] twists - < position (1.7), 831< - 2.0 flips - [1.5, 0.5] twists - < position (1.6), 803< - 2.0 flips - [0.0, 1.5] twists - < position (1.5), 822/ - 2.0 flips - [1.0, 1.0] twists - / position (1.6)]
+6: [12000< - 3.0 flips - [0.0, 0.0, 0.0] twists - < position (1.9), 12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)]
+7: [12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+8: []
+9: []
+10: [12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+11: []
+12: []
+13: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+14: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+15: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+16: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)]
+17: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)]
+18: [12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)]
+0:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+1:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+2:
+	12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)
+3.0 flips - 1.5 twists (2.2)
+3:
+	12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)
+3.0 flips - 1.5 twists (2.2)
+4:
+	12003< - 3.0 flips - [0.0, 0.0, 1.5] twists - < position (2.2)
+	811< - 2.0 flips - [0.5, 0.5] twists - < position (1.4)
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+	813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6)
+	805< - 2.0 flips - [0.0, 2.5] twists - < position (1.7)
+	831< - 2.0 flips - [1.5, 0.5] twists - < position (1.6)
+	803< - 2.0 flips - [0.0, 1.5] twists - < position (1.5)
+	822/ - 2.0 flips - [1.0, 1.0] twists - / position (1.6)
+24.0 flips - 14.5 twists (17.1)
+5:
+	12000< - 3.0 flips - [0.0, 0.0, 0.0] twists - < position (1.9)
+	12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)
+6.0 flips - 0.0 twists (3.8)
+6:
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+3.0 flips - 0.5 twists (1.7)
+7:
+0 flips - 0 twists (0.0)
+8:
+0 flips - 0 twists (0.0)
+9:
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+3.0 flips - 0.5 twists (1.7)
+10:
+0 flips - 0 twists (0.0)
+11:
+0 flips - 0 twists (0.0)
+12:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+9.0 flips - 2.0 twists (5.5)
+13:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+14:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+15:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+9.0 flips - 2.0 twists (5.5)
+16:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+3.0 flips - 0.5 twists (2.0)
+17:
+	12000/ - 3.0 flips - [0.0, 0.0, 0.0] twists - / position (1.9)
+3.0 flips - 0.0 twists (1.9)
+192.168.0.104 - - [09/Mar/2023 23:54:49] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:54:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:54:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:55:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [09/Mar/2023 23:55:04] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [10/Mar/2023 00:17:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:17:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:17:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:18:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:19:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:19:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:24:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:31:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:31:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:31:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:31:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:32:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:32:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:34:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:35:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:35:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:35:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:36:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:36:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:37:30] "GET /logger2 HTTP/1.1" 200 -
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [10/Mar/2023 00:44:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:44:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:44:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:44:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:45:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:45:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:55:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 00:55:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:04:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:04:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:05:22] "OPTIONS /logger/delete HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:05:23] "POST /logger/delete HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:05:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:05:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:05:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:05:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:06:39] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['12001< 12101o 12001o 813<']
+1: []
+2: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7), 813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+	813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6)
+11.0 flips - 4.0 twists (7.1)
+192.168.0.104 - - [10/Mar/2023 01:06:43] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 01:06:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:55:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:55:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:56:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:56:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:56:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [10/Mar/2023 19:57:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:10:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:10:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:27:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:27:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:27:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:27:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:28:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:28:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:28:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:28:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:28:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:28:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:29:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:31:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:32:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:32:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:32:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:52] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:33:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:34:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:34:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:35:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:38:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:46:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:54:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:57:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:58:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:58:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:58:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:58:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 09:58:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:00:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:00:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:01:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:07:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:07:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:07:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:08:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:08:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:08:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:08:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:08:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:09:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:09:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:09:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:09:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:09:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:13:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:13:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:13:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:13:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:14:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:14:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:14:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:14:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:14:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:17:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:17:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:20:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:20:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:20:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:21:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:23:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:23:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:23:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:23:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:23:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 10:23:24] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [11/Mar/2023 15:16:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:16:54] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [11/Mar/2023 15:34:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:34:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:34:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:34:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:34:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:34:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:49:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:49:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:49:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:49:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:49:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:50:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:50:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:56:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:58:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:58:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:05] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:08] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 15:59:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:03:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:03:37] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [11/Mar/2023 16:11:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:11:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:15:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:15:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:15:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:20:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:20:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:20:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:20:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:20:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:20:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:25:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:25:34] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:25:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:25:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:25:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:25:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:29:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:29:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:29:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:33:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:33:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:33:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:33:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:35:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:54] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:37:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:02] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:24] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:38:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:19] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:22] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:43:31] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:32] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:41] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:47:49] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:06] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:15] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:18] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:48:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:53:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:53:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 16:53:20] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [11/Mar/2023 17:02:10] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:02:13] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:02:16] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:08:35] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:08:38] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:17:23] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:17:27] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:17:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:17:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:17:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:37] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:40] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:51] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:20:57] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:21:00] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:21:03] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:24:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:25:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:25:11] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:25:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:27:55] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:27:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:28:01] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:28:04] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:28:07] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:28:09] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:28:12] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:28:14] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [11/Mar/2023 17:29:58] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:23] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: bob
+['# testing\n12221o 12222o\n# omg']
+1: []
+2: [12221o - 3.0 flips - [1.0, 1.0, 0.5] twists - o position (2.1), 12222o - 3.0 flips - [1.0, 1.0, 1.0] twists - o position (2.2)]
+0:
+0 flips - 0 twists (0.0)
+1:
+	12221o - 3.0 flips - [1.0, 1.0, 0.5] twists - o position (2.1)
+	12222o - 3.0 flips - [1.0, 1.0, 1.0] twists - o position (2.2)
+6.0 flips - 5.5 twists (4.3)
+192.168.0.104 - - [12/Mar/2023 09:43:34] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:42] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:45] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:47] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:53] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:56] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:43:59] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:45:12] "OPTIONS /logger/delete HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:45:13] "POST /logger/delete HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:45:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:45:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 09:50:44] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 11:33:17] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 11:33:20] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 11:33:23] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [12/Mar/2023 12:07:59] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:08:00] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:09:25] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:09:25] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:10:53] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:10:54] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:20] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:23] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:26] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:29] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:44] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:47] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:50] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:18:53] "GET /logger2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:1234
+ * Running on https://192.168.0.104:1234
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [12/Mar/2023 12:21:20] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:23] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:24] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:26] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:26] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:27] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:27] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:29] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:29] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:30] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:30] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:32] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:32] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:34] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:34] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:35] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:36] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:37] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:37] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:39] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:21:39] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:21:41] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [12/Mar/2023 12:22:12] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:15] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:16] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:18] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:19] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:21] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:21] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:23] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:24] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:26] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:27] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:28] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:29] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:30] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:31] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:32] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:32] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:34] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:34] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:36] "GET /logger/landing HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:22:36] "[32mGET /logger2 HTTP/1.1[0m" 302 -
+192.168.0.104 - - [12/Mar/2023 12:22:38] "GET /logger/landing HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Public\\pokemon-app\\myApp\\www\\python\\app.py', reloading
+ * Restarting with stat
+Using test data table
+ * Debugger is active!
+ * Debugger PIN: 138-255-528
+192.168.0.104 - - [12/Mar/2023 12:23:14] "OPTIONS /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:18] "POST /login2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:21] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:25] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:28] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:30] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:33] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:36] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:39] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:43] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:46] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 12:23:48] "GET /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 16:01:05] "OPTIONS /logger2 HTTP/1.1" 200 -
+Username: jer
+['\n# i am feeling sleepy now\n12001< 12101o 12001o 813<']
+1: []
+2: []
+3: [12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0), 12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8), 12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7), 813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6)]
+0:
+0 flips - 0 twists (0.0)
+1:
+0 flips - 0 twists (0.0)
+2:
+	12001< - 3.0 flips - [0.0, 0.0, 0.5] twists - < position (2.0)
+	12101o - 3.0 flips - [0.5, 0.0, 0.5] twists - o position (1.8)
+	12001o - 3.0 flips - [0.0, 0.0, 0.5] twists - o position (1.7)
+	813< - 2.0 flips - [0.5, 1.5] twists - < position (1.6)
+11.0 flips - 4.0 twists (7.1)
+192.168.0.104 - - [12/Mar/2023 16:01:11] "POST /logger2 HTTP/1.1" 200 -
+192.168.0.104 - - [12/Mar/2023 16:01:16] "GET /logger2 HTTP/1.1" 200 -
