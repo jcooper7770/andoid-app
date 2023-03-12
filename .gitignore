@@ -28,6 +28,8 @@ node_modules/
 # dynamic created files
 flask_session/
 athletes/
+routines.txt
+test.log
 
 # development
 venv/
