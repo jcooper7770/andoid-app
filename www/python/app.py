@@ -1,6 +1,10 @@
 """
 Flask application for trampoline logger and pokemon team maker
 
+Running for the android app:
+$ cd myApp
+$ python www/python.app.py
+
 Endpoints:
   - /[?league=GL|Remix|UL|ULP|ULRemix|ML|MLC&pokemon=pokemon]
   - /logger
