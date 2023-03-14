@@ -66,7 +66,6 @@
             <table align="center" width="100%">
                 <tr>
                     <td>
-
                         <!-- Username -->
                         <div class="form-row">
                             <div class="col-sm-3"><label for="name">Username:</label></div>
@@ -228,55 +227,63 @@
             </tbody>
         </table>
     </div>
-    <nav class="navbar navbar-dark bg-dark navbar-1 white">
+    <div class="wrapper">
+        <div class="sticky-nav" style="position: sticky; top: 60px;">
+            <nav class="navbar navbar-dark bg-dark navbar-1 white">
 
-        <!-- Navbar brand -->
-        <a class="navbar-brand">Filter</a>
+                <!-- Navbar brand -->
+                <a class="navbar-brand">Filter</a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <!-- Collapse button -->
+                <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
 
-        <ul class="nav navbar-nav mx-auto abs-center-x">
-            <li class="nav-item"><a class="navbar-brand">Athlete Practices</a></li>
-        </ul>
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-                <button type="button" class="btn float-right">
-                    <span class="fa fa-window-maximize" id="minimize_practices" style="color: white;"></span>
-                </button>
-            </li>
-        </ul>
+                <ul class="nav navbar-nav mx-auto abs-center-x">
+                    <li class="nav-item"><a class="navbar-brand">Athlete Practices</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn float-right">
+                            <span class="fa fa-window-maximize" id="minimize_practices" style="color: white;"></span>
+                        </button>
+                    </li>
+                </ul>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent15">
 
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <input class="form-control mr-sm-2 mr-auto" type="text" name="practice_skills" id="practice_skills"
-                        placeholder="Input skills/combos">
-                    <button id="submit-skills" class="btn btn-secondary" type="submit">Search for skills</button>
-                </li>
-                <li class="nav-item">
-                    <!--from:-->
-                    <input class="form-control mr-sm-2 mr-auto" type="date" name="practice_date" id="practice_date">
-                    <!--
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <input class="form-control mr-sm-2 mr-auto" type="text" name="practice_skills"
+                                id="practice_skills" placeholder="Input skills/combos">
+                            <button id="submit-skills" class="btn btn-secondary" type="submit">Search for
+                                skills</button>
+                        </li>
+                        <li class="nav-item">
+                            <!--from:-->
+                            <input class="form-control mr-sm-2 mr-auto" type="date" name="practice_date"
+                                id="practice_date">
+                            <!--
                 to: <input class="form-control mr-sm-2 mr-auto" type="date" name="practice_date2" id="practice_date2">
                 -->
-                    <button id="search-practice" class="btn btn-secondary" type="submit">Search Practice</button>
-                </li>
-            </ul>
-            <!-- Links -->
+                            <button id="search-practice" class="btn btn-secondary" type="submit">Search
+                                Practice</button>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+
+                </div>
+                <!-- Collapsible content -->
+                </ul>
+
+            </nav>
 
         </div>
-        <!-- Collapsible content -->
-        </ul>
-
-    </nav>
-
-    <div id="practices_body" ></div>
+        <div id="practices_body"></div>
+    </div>
     <!--<script src="cordova.js"></script>-->
     <script src="js/index.js"></script>
     <script src="js/jquery.min.js"></script>

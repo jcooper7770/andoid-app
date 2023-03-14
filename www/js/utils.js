@@ -1,5 +1,22 @@
 async function submitData(data, endpoint="logger2") {
-    return await fetch(`http://192.168.0.104:1234/${endpoint}`, {
+    /*
+    for (let i=0; i< 10; i++) {
+        //await fetch(`https://192.168.68.124:1234/test2`, {
+        await fetch(`https://192.168.68.124:1234/test2`, {
+            method: "GET",
+        })
+        .then((response) => response.json())
+        .then((resp) => {
+            console.log(`${resp}`);
+            var y = JSON.stringify(resp);
+            console.log(`dfsdf ${y}`);
+        }).catch((err) => {
+            console.log(`ERROR: ${err}`);
+        });
+    }
+    */
+
+    return await fetch(`http://192.168.68.124:1234/${endpoint}`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

@@ -34,6 +34,7 @@ import json
 import os
 import socket
 import subprocess
+import sys
 import traceback
 from collections import defaultdict, OrderedDict
 from passlib.hash import sha256_crypt
@@ -459,6 +460,12 @@ def trampoline_user_practices(username):
     body = "".join(html) if all_practice_tables else ""
     return render_template("trampoline/user_practices.html", body=body)
 
+
+@app.route("/test2")
+def test_route():
+    return {"success": True}
+
+
 @app.route("/logger2", methods=['GET', 'POST'])
 def trampoline_log2():
     # POST/Redirect/GET to avoid resubmitting form on refresh
@@ -468,17 +475,21 @@ def trampoline_log2():
         try:
             _save_trampoline_data(request)
         except Exception as exception:
-            session["error"] = f"Error saving log data: {exception}"
+            error_text = f"Error saving log data: {exception}"
+            session["error"] = error_text
             logging.error(f"Error saving trampoline log data: {exception}")
             #return redirect(url_for('trampoline_log2', routine=request.form.get('log')))
-            return {"success": False}
+            return {"success": False, "error": error_text}
 
         return {
             "success": True
         }
-
+    
     # Require user to be logged in to use the app
     #session["name"] = "bob"
+    username = request.args.get("username")
+    session['name'] = username
+    print(f"----USER: {username}")
     if not session.get("name"):
         session['name'] = "bob"
         #return redirect(url_for('landing_page'))
@@ -499,6 +510,7 @@ def trampoline_log2():
 
     # Get data from database
     user_practices = Practice.load_from_db(username, date=session.get("search_date"), skills=session.get("search_skills", ""))
+    '''
     all_turns = []
     for practice in user_practices:
         # Add the turns into a table for that practice
@@ -508,7 +520,7 @@ def trampoline_log2():
         practice_tables.append(practice_table)
         for turn in practice.turns:
             all_turns.append([skill.shorthand for skill in turn.skills])
-
+    '''
     all_practices = []
     for practice in user_practices:
         practice_dict = {}
@@ -550,7 +562,8 @@ def trampoline_log2():
         log_text = session.get('log', {}).get(date_to_use.strftime("%m-%d-%Y")) or request.args.get('routine', '')
     else:
         log_text = request.args.get('routine', '')
-    
+
+    ''' 
     return_val = dict(
         template="trampoline/trampoline.html",
         body=body, username=username,
@@ -567,6 +580,7 @@ def trampoline_log2():
         user_turns=all_turns,
         practices=all_practices
     )
+    '''
     goals = get_user_goals(current_user())
     goals = [
         [x for x in g] for g in goals
@@ -577,9 +591,11 @@ def trampoline_log2():
     ]
     return_val = dict(
         template="trampoline/trampoline.html",
-        body=body, username=username,
+        #body=body,
+        body="",
+        username=username,
         event=event,
-        routine_text=log_text,
+        #routine_text=log_text,
         user=session.get('name'),
         goals=goals,
         airtimes=airtimes,
@@ -588,12 +604,13 @@ def trampoline_log2():
         search_date=session.get("search_date").strftime("%Y-%m-%d") if session.get("search_date") else None,
         current_date=session.get('current_date').strftime("%Y-%m-%d") if session.get('current_date') else None,
         search_skills=session.get("search_skills", ""),
-        user_turns=all_turns,
+        #user_turns=all_turns,
         practices=all_practices
     )
     ret = jsonify(**return_val)
     print(ret, ret.calculate_content_length(), ret.content_length, ret.automatically_set_content_length)
     ret.automatically_set_content_length = False
+    ret.headers.add("Access-Control-Allow-Origin", "*")
     return ret
     #return jsonify(
     #    **return_val
@@ -1602,10 +1619,23 @@ if __name__ == "__main__":
         logger.info("Using main data table")
     else:
         set_table_name("test_data")
-        create_engine(table_name="test_data")
+        db_name = None
+        if len(sys.argv) > 1:
+            db_name = sys.argv[1]
+            print(f"Using input db: {db_name}")
+        create_engine(table_name="test_data", db_name=db_name)
         logger.info("Using test data table")
 
     # start app
     location = "www/python"
-    app.run(debug=True, port=1234, ssl_context=(f'{location}/cert.pem', f'{location}/key.pem'), host="0.0.0.0")
+    import ssl
+    context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+    cert = f"{location}/cert.pem"
+    key = f"{location}/key.pem"
+    context.load_cert_chain(cert, key)
+    #app.run(debug=True, port=1234, ssl_context=(f'{location}/cert.pem', f'{location}/key.pem'), host="0.0.0.0")
+    app.run(debug=True, port=1234, ssl_context=context, host="0.0.0.0")
     #app.run(debug=True, port=1234, host="0.0.0.0")
+
+    #from waitress import serve
+    #serve(app, host="0.0.0.0", port=1234, url_scheme="https")

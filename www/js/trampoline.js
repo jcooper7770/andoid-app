@@ -83,7 +83,8 @@ const paginate = function() {
     prev_page.onclick = changePage;
     //practices_div.prepend(prev_page);
     page_buttons.prepend(prev_page);
-    practices_div.append(page_buttons);
+    //practices_div.append(page_buttons);
+    document.querySelector(".sticky-nav").appendChild(page_buttons)
 
     var practices_page = document.createElement("div");
     practices_page.id = "practices_page";
@@ -390,7 +391,7 @@ function editPractice(target, date, event) {
         console.log(`Log: ${log}`);
         logElement.value = log;
     });
-    //logElement.scrollIntoView();
+    logElement.scrollIntoView();
 }
 async function getLogFromPractice(table) {
     var logLines = [];
@@ -455,7 +456,7 @@ $("[id^=remove_]").click(function (e) {
 });
 */
 async function sendLogData(log_text, notes, name, event, date) {
-    return await fetch("http://192.168.0.104:1234/logger2", {
+    return await fetch("http://192.168.68.124:1234/logger2", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
@@ -485,7 +486,7 @@ async function sendLogData(log_text, notes, name, event, date) {
     })
 }
 async function submitData(data, endpoint="logger2") {
-    return await fetch(`http://192.168.0.104:1234/${endpoint}`, {
+    return await fetch(`http://192.168.68.124:1234/${endpoint}`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
@@ -527,10 +528,15 @@ $("#submit-button").click(function (e) {
         'replace': replace_practice,
     });
     //sendLogData(data, notes, name, event, date).then(() => {
-    submitData(data).then(() => {
-        replace_practice = false;
+    submitData(data).then((resp) => {
+        if (!resp.success) {
+            alert(resp.error);
+        } else {
+            replace_practice = false;
+            document.location.reload();
+        }
         // add new data to the localstorage
-        document.location.reload();
+        //document.location.reload();
     }).catch(() => {
         console.log("Failed to send data");
         document.querySelector('.spinner-container').style.display = "none";

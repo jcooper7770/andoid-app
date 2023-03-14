@@ -14,9 +14,19 @@ var user_turns = [];
 var user_goals = [];
 var user_airtimes = [];
 async function loadHTML3() {
-    //return fetch("http://192.168.0.104:1234/logger", {
-    return await fetch("http://192.168.0.104:1234/logger2", {
+    //return fetch("http://192.168.68.124:1234/logger", {
+    var name = sessionStorage.getItem("username");
+    if (name == null) {
+        var url ="http://192.168.68.124:1234/logger2"
+    } else {
+        var url ="http://192.168.68.124:1234/logger2?username="+name;
+    }
+    //return await fetch("http://192.168.68.124:1234/logger2", {
+    return await fetch(url, {
         method: "GET",
+        headers: {
+            'Content-Type': 'application/json',
+        },
         //mode: "cors"
         //mode: "no-cors"
     }).then((response) => {
@@ -34,7 +44,8 @@ async function loadHTML3() {
 
     }).catch(
         error => {
-            console.log("ERROR: ", error);
+            console.error("ERROR: ", error);
+            console.error("ERROR: ", error.stack);
             return Promise.reject()
     })
  
@@ -187,6 +198,9 @@ async function loadHTMLRetries(numRetries) {
             console.log("Failed to load HTML after ", i+1, " retries.");
             console.log("ERROR: ", err);
             caughtError = true;
+            if (i == numRetries - 1) {
+                throw new Error("Failed to load data");               
+            }
         });
 
         if (done) {
@@ -214,7 +228,7 @@ function fillPageWithData(data) {
 
 
     // save user turns
-    user_turns = jsondata.user_turns;
+    //user_turns = jsondata.user_turns;
     user_goals = jsondata.goals;
     set_goals(user_goals);
     user_airtimes = jsondata.airtimes;
@@ -437,5 +451,9 @@ if (allData != null && allData != "undefined") {
         // remove loading spinner
         document.querySelector('.spinner-container').style.display = "none";
         */
+    }).catch( (err) => {
+        // remove loading spinner
+        document.querySelector('.spinner-container').style.display = "none";
+        alert(err);
     });
 }
