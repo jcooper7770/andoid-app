@@ -60,12 +60,14 @@ def set_table_name(table_name):
     TABLE_NAME = table_name
 
 
-def create_engine(table_name=None):
+def create_engine(table_name=None, db_name=None):
     table_name = table_name or TABLE_NAME
     global ENGINE
     global DB_TABLE
     url = "itsflippincoop.com" if table_name == "test_data" else "127.0.0.1"
-    db_name = "tramp" if os.environ.get("FLASK_ENV", "prod") == "prod" else "test_tramp"
+    #os.environ['FLASK_ENV'] = 'test'
+    if not db_name:
+        db_name = "tramp" if os.environ.get("FLASK_ENV", "prod") == "prod" else "test_tramp"
     print(f"Using db: {db_name}")
     engine = sqlalchemy.create_engine(f'mysql+pymysql://itsflippincoop:password@itsflippincoop.com:3306/{db_name}', echo=True)
     ENGINE = engine

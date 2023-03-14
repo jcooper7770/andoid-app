@@ -100,6 +100,7 @@ function set_goals(goals) {
 
 function set_airtimes(airtimes) {
     var airtimes_table = document.querySelector("#airtimes-table");
+    airtimes_table.classList = "table table-bordered border-white";
     for (i in airtimes) {
         var airtime = airtimes[i];
 
@@ -288,7 +289,7 @@ function convertPracticeToTable(practice) {
     var table = document.createElement("table");
     table.border = 1;
     table.align = "center";
-    table.classList = "table table-striped table-responsive-lg";
+    table.classList = "table table-striped table-responsive-lg table-bordered border-white";
     table.width = "30%";
 
     // header
@@ -400,7 +401,7 @@ function convertPracticeToTable(practice) {
     document.querySelector("#practices_body").appendChild(table);
 
     var div = document.createElement("div");
-    div.classList = "container";
+    //div.classList = "container";
     div.appendChild(table);
     document.querySelector("#practices").appendChild(div);
 }
