@@ -26,4 +26,11 @@ function onDeviceReady() {
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     /*document.getElementById('deviceready').classList.add('ready');*/
+    //cordova.plugin.http.setServerTrustMode('nocheck');
+    cordova.plugin.http.setServerTrustMode('nocheck', function() {
+        console.log('Server trust mode set successfully.');
+    }, function(error) {
+        console.error('Error setting server trust mode:', error);
+    });
+    cordova.plugin.http.setHeader('*', 'Content-Type', 'application/json');
 }

@@ -539,7 +539,7 @@ $("#submit-button").click(function (e) {
         //document.location.reload();
     }).catch(() => {
         console.log("Failed to send data");
-        document.querySelector('.spinner-container').style.display = "none";
+        //document.querySelector('.spinner-container').style.display = "none";
     });
 
 });

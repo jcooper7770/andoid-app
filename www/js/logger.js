@@ -1,3 +1,4 @@
+/*
 async function addNav() {
     await $.get("nav.html", function(data) {
         $("#nav-placeholder").replaceWith(data);
@@ -8,11 +9,73 @@ async function load(){
     await addNav();
 }
 load();
-
-
+screen.orientation.unlock();
+*/
 var user_turns = [];
 var user_goals = [];
 var user_airtimes = [];
+async function loadHTML4() {
+    //return fetch("http://192.168.68.124:1234/logger", {
+    var name = sessionStorage.getItem("username");
+    if (name == null) {
+        var url ="http://192.168.68.124:1234/logger2"
+    } else {
+        var url ="https://192.168.68.124:1234/logger2?username="+name;
+    }
+
+    const options = {
+        method: 'get',
+    };
+    cordova.plugin.http.sendRequest(url, options, function(response) {
+        // prints 200
+        alert(response.status);
+        var obj = JSON.parse(response.data); // This is the resultant JSON in useful form
+    }, function(response) {
+        // prints 403
+        alert(response.status);
+
+        //prints Permission denied
+        alert(response.error);
+    });
+
+    /*
+    cordova.plugin.http.get(url, {}, {}, function(response) {
+        console.log(response.data);
+    }, function(error) {
+        console.error(error);
+    });
+    */
+
+
+    //return await fetch("http://192.168.68.124:1234/logger2", {
+    return await fetch(url, {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        //mode: "cors"
+        //mode: "no-cors"
+    }).then((response) => {
+        if(!response.ok) {
+            console.log("Error. Rejecting. ", response.status, "(", response.statusText ,")");
+            return Promise.reject()
+        }
+        return new Promise((resolve, reject) => {
+            //return resolve(response.text());
+            var respText = resolve(response.text());
+            console.log(`resp: ${respText}`);
+            //return resolve(response.json());
+            return JSON.parse(respText);
+        })
+
+    }).catch(
+        error => {
+            console.error("ERROR: ", error);
+            console.error("ERROR: ", error.stack);
+            return Promise.reject()
+    })
+ 
+}
 async function loadHTML3() {
     //return fetch("http://192.168.68.124:1234/logger", {
     var name = sessionStorage.getItem("username");
@@ -182,6 +245,7 @@ async function loadHTMLRetries(numRetries) {
         var caughtError = false;
         var done = false;
         console.log("Attempt number: ", i+1);
+        //await loadHTML3().then((data) => {
         await loadHTML3().then((data) => {
             console.log("data: ", data);
             // replace entire html document
@@ -266,7 +330,7 @@ function finishSetup() {
     });
     console.log("Done2");
 
-    $("a.dropdown-item").click(function (e) {
+    $("a.dropdown-item[id^=skill]").click(function (e) {
         e.preventDefault();
         var skill = event.target.id.slice(5).replace('t', 'o').replace('p', '<').replace('s', '/');
         console.log("adding " + skill);
@@ -405,56 +469,32 @@ function convertPracticeToTable(practice) {
     div.appendChild(table);
     document.querySelector("#practices").appendChild(div);
 }
+document.addEventListener('deviceready', function() {
+    localStorage.removeItem("savedData");
+    var allData = localStorage.getItem("savedData");
+    if (allData != null && allData != "undefined") {
+        console.log(`allData: ${allData}`);
+        var data = allData;
+        if (typeof allData == "string") {
+            var data = JSON.parse(allData);
+        }
 
-localStorage.removeItem("savedData");
-var allData = localStorage.getItem("savedData");
-if (allData != null && allData != "undefined") {
-    console.log(`allData: ${allData}`);
-    var data = allData;
-    if (typeof allData == "string") {
-        var data = JSON.parse(allData);
-    }
-
-    fillPageWithData(data);
-    alert("Filled with data");
-    finishSetup();
-} else {
-    // Show loading spinner
-    showSpinner("Loading...");
-
-    // Start loading data
-    loadHTMLRetries(10).then(() => {
-        console.log("Done0");
-        console.log("Done1");
+        fillPageWithData(data);
+        alert("Filled with data");
         finishSetup();
-        /*
-        $(function() {
-            $("div.dropdown-menu").on("click", "[data-keepopenonclick]", function(e) {
-                    e.stopPropagation();
-            });
-        });
-        console.log("Done2");
+    } else {
+        // Show loading spinner
+        showSpinner("Loading...");
 
-        $("a.dropdown-item").click(function (e) {
-            e.preventDefault();
-            var skill = event.target.id.slice(5).replace('t', 'o').replace('p', '<').replace('s', '/');
-            console.log("adding " + skill);
-            var routineText = document.getElementById('log').value;
-            if (routineText != "") {
-                $('#log').val(routineText + ' ' + skill);
-            } else {
-                $('#log').val(skill);
-            }
-            addRecSkill();
+        // Start loading data
+        loadHTMLRetries(10).then(() => {
+            console.log("Done0");
+            console.log("Done1");
+            finishSetup();
+        }).catch( (err) => {
+            // remove loading spinner
+            document.querySelector('.spinner-container').style.display = "none";
+            alert(err);
         });
-        console.log("Done");
-        paginate();
-        // remove loading spinner
-        document.querySelector('.spinner-container').style.display = "none";
-        */
-    }).catch( (err) => {
-        // remove loading spinner
-        document.querySelector('.spinner-container').style.display = "none";
-        alert(err);
-    });
-}
+    }
+});

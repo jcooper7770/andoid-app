@@ -93,17 +93,15 @@
                             </div>
                             <div class="col">
                                 <select name="event" id="event">
-                                    <option value="trampoline" {% if event=="trampoline" %} selected{% endif %}>
-                                        Trampoline</option>
-                                    <option value="dmt" {% if event=="dmt" %} selected{% endif %}>Double Mini
-                                    </option>
+                                    <option value="trampoline" selected>Trampoline</option>
+                                    <option value="dmt">Double Mini</option>
                                 </select><br>
                             </div>
                         </div>
 
                         <!-- Skills to be logged -->
                         <div class="form-row" id="row-skill">
-                            <div class="col-sm-3">Skills:<br><a href="/logger/about" class="btn btn-light"
+                            <div class="col-sm-3">Skills:<br><a href="about_trampoline.html" class="btn btn-light"
                                     style="border: 1px solid; border-radius: 10px;">Click here for help</a></div>
                             <div class="col" id="col-skill">
                                 <textarea id="log" name="log" rows="5" style="width:90%" form="logger"
@@ -285,7 +283,7 @@
         </div>
         <div id="practices_body"></div>
     </div>
-    <!--<script src="cordova.js"></script>-->
+    <script src="cordova.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/trampoline.js"></script>

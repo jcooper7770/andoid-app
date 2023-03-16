@@ -1,0 +1,192 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** ">-->
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+  <!-- css libs -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pokemon.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Hello World</title>
+</head>
+
+<body>
+  <!-- my stuff -->
+  <div id="nav-placeholder"></div>
+  <br><br>
+  <div class="container">
+    <div class="card border-primary">
+      <div class="card-header text-center">
+        <h2>Trampoline Practice Logger</h2>
+      </div>
+      <div class="row card-body">
+        <div class="col-sm-3">
+          <img class="col-sm" src="img/flipLogo.png" alt="logo" />
+        </div>
+        <div class="col-sm-9">
+          <!--<h5 class="card-title text-center">Trampoline Practice Logger</h5>-->
+          <p class="card-text">
+            How often do you find yourself manually handwriting each and every skill you do at practice then spending
+            time
+            to calculate metrics like the Degree of Difficulty (DD) of your turn? Well now there is an app you can use
+            for
+            that!
+          </p>
+          <p class="card-text">Things that this tool can do:</p>
+          <ul style="list-style-type: none;">
+            <li><i class="fa fa-book"></i> Stores all previous trainings in one place</i></li>
+            <li><i class="fa fa-book"></i> Easy input of a single turn or multiple turns</i></li>
+            <li><i class="fa fa-book"></i> Simple search functionality to go back to a certain training</li>
+            <li><i class="fa fa-book"></i> Caluclates metrics per turn and practice like:
+              <ul style="list-style-type: none; margin-left: 20px;">
+                <li><i class="fa fa-book"></i> Number of skills</li>
+                <li><i class="fa fa-book"></i> Number of flips</li>
+                <li><i class="fa fa-book"></i> Total Difficulty</li>
+              </ul>
+            </li>
+          </ul>
+          <div id="login-div">
+            <p class="card-text">Try it today!</p>
+            <a href="/login.html" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaderboards -->
+  <br><br>
+  <div class="container">
+    <div class="card border-primary">
+      <div class="card-header text-center">
+        <h2>Leaderboards</h2>
+      </div>
+      <div id="leaderboard"></div>
+    </div>
+  </div>
+
+  <br><br>
+  <script src="js/index.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/utils.js"></script>
+  <!--<script src="js/logger.js"></script>-->
+
+  <script>
+    // populate leaderboards
+    if (sessionStorage.getItem("username") != null) {
+      document.getElementById("login-div").style.display = "none";
+    }
+
+
+    async function loadLeaderboards() {
+      var url = "https://192.168.68.124:1234/leaderboards"
+      //return await fetch("http://192.168.68.124:1234/logger2", {
+      return await fetch(url, {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }).then((response) => {
+        if (!response.ok) {
+          console.log("Error. Rejecting. ", response.status, "(", response.statusText, ")");
+          return Promise.reject()
+        }
+        return new Promise((resolve, reject) => {
+          //return resolve(response.text());
+          var respText = resolve(response.text());
+          console.log(`resp: ${respText}`);
+          //return resolve(response.json());
+          return JSON.parse(respText);
+        })
+      }).catch(
+        error => {
+          console.error("ERROR: ", error);
+          console.error("ERROR: ", error.stack);
+          return Promise.reject()
+        })
+    }
+    
+    function createLeaderboard(board, title) {
+      var leaderboardDiv = document.querySelector("#leaderboard");
+      // title card
+      var card = document.createElement("div");
+      card.classList = "row card-body";
+      var col = document.createElement("div");
+      col.classList = "col";
+      col.innerHTML = `<h3 class="text-center">${title}</h3>`;
+      card.appendChild(col);
+      leaderboardDiv.appendChild(card);
+      var card2 = document.createElement("div");
+      card2.classList = "row card-body";
+
+      var events = Object.keys(board);
+      events.sort();
+      events.forEach(event => {
+        var eventCol = document.createElement("div");
+        eventCol.classList = "col-sm";
+        var h5 = document.createElement("h5");
+        h5.classList = "card-title";
+        h5.innerText = event;
+        eventCol.appendChild(h5);
+
+        var table = document.createElement("table");
+        table.classList = "table table-striped";
+
+        // table header
+        var thead = document.createElement("thead");
+        thead.classList = "thead-dark";
+        thead.innerHTML = `<th>User</th><th>${title}</th>`;
+        table.appendChild(thead);
+
+        // scores
+        var tbody = document.createElement("tbody");
+        var entries = Object.entries(board[event]);
+        entries.sort(function(a,b) {
+          return b[1] - a[1];
+        });
+        for ( [user, score] of board[event]) {
+          var tr = document.createElement("tr");
+          tr.innerHTML = `<td>${user}</td><td>${score}</td>`;
+          tbody.appendChild(tr);     
+        }
+        table.appendChild(tbody);
+        eventCol.appendChild(table);
+        leaderboardDiv.appendChild(eventCol);
+      });
+      leaderboardDiv.appendChild(card2);
+    }
+
+    loadLeaderboards().then((data) => {
+      console.log(data);
+      var dataObj = JSON.parse(data);
+      console.log(typeof data)
+      var boardTypes = Object.keys(dataObj);
+      boardTypes.sort();
+      boardTypes.forEach(board => {
+        createLeaderboard(dataObj[board], board);
+      });
+    }).catch((err) => {
+      console.error(`Error: ${err}`);
+    });
+  </script>

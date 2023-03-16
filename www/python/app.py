@@ -1087,6 +1087,44 @@ def logout():
     return redirect(url_for('login'))
 
 
+@app.route("/leaderboards")
+def leaderboard():
+    """
+    return leaderboard    
+    """
+    mock_leaderboard = {
+        "DD": {
+            "Trampoline": {
+                "Ruben": 18.2,
+                "coop4440": 15.8,
+                "Jer": 15.0
+            },
+            "DMT": {
+                "Ruben": 24.1,
+                "coop4440": 18.4,
+                "Jer": 14.8
+            }
+        },
+        "Flips": {
+            "Trampoline": {"Ruben": 10, "Jer": 9},
+            "DMT": {"Ruben": 5, "Jer": 2}
+        }
+    }
+    leaderboard = get_leaderboards()
+
+    sorted_leaderboard = {}
+    for board_type, board_data in leaderboard.items():
+        board = {}
+        for event, event_data in board_data.items():
+            event_scores = sorted(event_data.items(), key=lambda x: str(x)[1].split(" ")[0])
+            board[event] = event_scores
+        sorted_leaderboard[board_type] = board
+
+    if not leaderboard["DD"]:
+        leaderboard = mock_leaderboard
+    return sorted_leaderboard
+
+
 @app.route("/logger/landing")
 def landing_page():
     """
@@ -1184,6 +1222,52 @@ def coach_message():
     return redirect(url_for('coach_settings'))
 
 
+@app.route('/logger/athlete/messages2', methods=["POST"])
+def athlete_message2():
+    """
+    Send a message to the coach
+    """
+    request_form = request.get_json()
+    users, _ = get_users_and_turns(only_users=True)
+    name = request_form.get('name')
+    current_user = Athlete.load(name)
+
+    messages = request_form.get("message")
+    if messages:
+        print(f"mesages: {messages}")
+        now = datetime.datetime.now()
+        new_message = f"{messages} - {current_user.name} {now.strftime('%Y-%m-%d %H:%M:%S')}"
+
+        for username, user in users.items():
+            if not user['is_coach']:
+                continue
+            if current_user.name in user['athletes']:
+                coach = Athlete.load(username)
+                coach.messages.append({"read": False, "msg":new_message})
+                coach.save()
+        return {'success': True}
+    
+    read_messages = {key:value for key, value in request_form.items() if key.startswith("message_")}
+    print(f"read messages: {read_messages}")
+
+    # First mark all as read
+    for message in range(len(current_user.messages)):
+        current_msg = current_user.messages[message]
+        if isinstance(current_msg, str):
+            current_user.messages[message] = {'read': False, 'msg': current_msg}
+        current_user.messages[message]['read'] = False
+
+    # then mark the read ones as read
+    for message in read_messages:
+        message_num = int(message[8:]) - 1 # key - message_
+        current_msg = current_user.messages[message_num]
+        if isinstance(current_msg, str):
+            current_user.messages[message_num] = {'read': False, 'msg': current_msg}
+        current_user.messages[message_num]['read'] = True
+    current_user.save() 
+    return {"success": True}
+
+
 @app.route('/logger/athlete/messages', methods=["POST"])
 def athlete_message():
     """
@@ -1266,6 +1350,156 @@ def pokemon_user_profile():
         regionals_data=regionals_data,
         error_text=session.get('error'),
         )
+
+
+@app.route("/logger/user/statistics2")
+def user_stats2():
+    """
+    User statistics
+    """
+    username = request.args.get('name')
+    if not username:
+        return {"success": False, "error": "No username found"}
+
+    body = ""
+    # Get user data
+    user_turns = get_user_turns(username)
+    airtimes = get_user_airtimes(username)
+    print(f"user turns: {len(user_turns)}")
+
+    # Collect all skills
+    all_skills = defaultdict(lambda: {'all': 0, 'trampoline': 0, 'dmt': 0})
+    dmt_passes = defaultdict(lambda: {'all': 0, 'trampoline': 0, 'dmt': 0})
+    for turn in user_turns:
+        skills = turn[1]
+        event = turn[4]
+        if skills.startswith('-'):
+            continue
+        routines = convert_form_data(skills, event=event, logger=None, get_athlete=False)
+        if not routines:
+            continue
+
+        routines = routines[0]
+        for s in routines.skills:
+            skill = s.shorthand
+            if skill in NON_SKILLS:
+                continue
+
+            all_skills[skill][event] += 1
+            all_skills[skill]['all'] += 1
+        
+        # add double mini passes
+        if event == "dmt" and len(routines.skills) == 2:
+            dmt_skills = [s.shorthand for s in routines.skills]
+            if 'X' in dmt_skills:
+                continue
+            dmt_pass = ' '.join(dmt_skills)
+            dmt_passes[dmt_pass]['dmt'] += 1
+            dmt_passes[dmt_pass]['all'] += 1
+
+    print(f"---- dmt passes: {dmt_passes}") 
+    # print the tables
+    tables = []
+    
+    all_skills_ordered = OrderedDict()
+    print(all_skills.keys())
+    all_keys = [key for key in all_skills.keys() if len(key) > 1]
+    for key in sorted(all_keys, key=lambda x: int(x[:-1]) if len(x)>1 else x):
+        all_skills_ordered[key] = all_skills[key]
+    # add dmt passes
+    dmt_passes_ordered = OrderedDict()
+    for key in sorted(dmt_passes.keys(), key=lambda x: (x.split()[0][:-1], x.split()[1][:-1])):
+        #all_skills_ordered[key] = dmt_passes[key]
+        dmt_passes_ordered[key] = dmt_passes[key]
+    print(all_skills_ordered)
+
+    body = ""
+    # User charts
+    start_date = request.args.get('chart_start')
+    if start_date:
+        start_date = datetime.datetime.strptime(start_date, "%m/%d/%Y")
+    end_date = request.args.get('chart_end')
+    if end_date:
+        end_date = datetime.datetime.strptime(end_date, "%m/%d/%Y")
+
+    current_user = username
+    # get user from db
+    try:
+        user_data = get_user(current_user)
+    except Exception as exc:
+        logger.error(f"Exception: {exc}")
+        user_data = {}
+
+    #if user_data["is_coach"]:
+    #    return redirect(url_for("coach_settings"))
+
+    event_turns, _ = get_turn_dds()
+    datapts = {}
+    day_flips = {
+        'trampoline': defaultdict(int),
+        'dmt': defaultdict(int),
+    }
+    flips_per_turn = {
+        'trampoline': defaultdict(list),
+        'dmt': defaultdict(list)
+    }
+    turns_per_practice = defaultdict(int)
+    for event, all_turns in event_turns.items():
+        datapts[f'{event}_dd'] = []
+        datapts[f'{event}_flips'] = []
+        # TODO: Add in # skills
+        for turn in sorted(all_turns, key=lambda x: x['date']):
+            # Skip notes
+            if turn['turn'].startswith('-'):
+                continue
+
+            # notes also have empty turns
+            if not turn['turn'] and turn['note']:
+                continue
+
+            # skip other users
+            if current_user and turn['user'].lower() != current_user:
+                continue 
+            turn_date = str(turn['date']).split()[0]
+            if start_date and turn['date'] < start_date:
+                continue
+            if end_date and turn['date'] > end_date:
+                continue
+            turn_flips = turn['flips']
+            datapts[f'{event}_dd'].append({
+                #'x': str(turn['date']).split()[0],
+                'x': turn_date,
+                'y': turn['dd']
+            })
+            datapts[f'{event}_flips'].append({
+                #'x': str(turn['date']).split()[0],
+                'x': turn_date,
+                'y': turn_flips
+            })
+            day_flips[event][turn_date] += turn_flips
+            flips_per_turn[event][turn_date].append(turn_flips)
+            turns_per_practice[turn_date] += 1
+    
+    datapts['trampoline_flips_per_day'] = [{'x': date, 'y': flips} for date, flips in sorted(day_flips['trampoline'].items(), key=lambda x: x[0])]
+    datapts['dmt_flips_per_day'] = [{'x': date, 'y': flips} for date, flips in day_flips['dmt'].items()]
+    datapts['dmt_flips_per_turn'] = [{'x': date, 'y': sum(flips)/len(flips)} for date, flips in flips_per_turn['dmt'].items()]
+    datapts['trampoline_flips_per_turn'] = [{'x': date, 'y': sum(flips)/len(flips)} for date, flips in flips_per_turn['trampoline'].items()]
+    datapts['turns_per_practice'] = [{'x': date, 'y': turns} for date, turns in sorted(turns_per_practice.items(), key=lambda x: x[0])]
+
+    # airtimes data
+    datapts['airtimes'] = [{'x': airtime['date'], 'y': float(airtime['airtime'])} for airtime in airtimes if airtime['airtime']]
+    ret = dict(
+        body=body,
+        user=username,
+        datapts=datapts,
+        chart_start=request.args.get('chart_start', ""),
+        chart_end=request.args.get('chart_end', ""),
+        error_text=session.get('error'),
+        all_skills=all_skills_ordered,
+        dmt_passes=dmt_passes_ordered
+    )
+    #return jsonify(**ret)
+    return ret
 
 
 @app.route("/logger/user/statistics")
@@ -1419,6 +1653,40 @@ def user_stats():
         dmt_passes=dmt_passes_ordered
     )
 
+
+@app.route("/logger/user2")
+def user_profile2():
+    """
+    User profile
+    """
+    current_user = request.args.get("name", None)
+    if not current_user:
+        return {"success": False}
+    # get user from db
+    try:
+        user_data = get_user(current_user)
+    except Exception as exc:
+        logger.error(f"Exception: {exc}")
+        user_data = {}
+
+    #if user_data["is_coach"]:
+    #    return redirect(url_for("coach_settings"))
+    
+    messages = []
+    for message in user_data['messages']:
+        if isinstance(message, str):
+            message = {"read": False, "msg": message}
+        messages.append(message)
+
+    return_val = dict(
+        user=current_user,
+        user_data=user_data,
+        error_text=session.get('error'),
+        messages=messages
+    )
+    return jsonify(**return_val)
+
+
 @app.route("/logger/user")
 def user_profile():
     """
@@ -1502,6 +1770,43 @@ def pokemon_update_user():
     user.save()
     return redirect(url_for("pokemon_user_profile"))
 
+
+@app.route("/logger/user/update2", methods=["POST"])
+def update_user2():
+    """
+    Update user
+    """
+    request_form = request.get_json()
+    print(f"xxxxxx request form: {request_form}")
+    private = True if request_form.get("private")=="true" else False
+    expand_comments = True if request_form.get("expand")=="true" else False
+    compulsory = request_form.get("compulsory")
+    optional = request_form.get("optional")
+    #athlete = Athlete.load(session.get("name"))
+    athlete = Athlete.load(request_form.get('name'))
+
+    # update password
+    session['error'] = ""
+    old_password = request_form.get('old_password')
+    new_password = request_form.get('new_password')
+    if old_password:
+        if sha256_crypt.verify(old_password, athlete.password):
+            if not new_password:
+                return {"success": False, "error": "Please enter a new password"}
+            else:
+                athlete.password = sha256_crypt.encrypt(new_password)
+        else:
+            return {"success": False, "error": "Did not update password for user because old password was incorrect"}
+
+    athlete.private = private
+    athlete.compulsory = [skill for skill in compulsory.split()]
+    athlete.optional = [skill for skill in optional.split()]
+    athlete.expand_comments = expand_comments
+    athlete.save()
+    resp = {"success": True}
+    ret = jsonify(**resp)
+    ret.headers.add("Access-Control-Allow-Origin", "*")
+    return ret
 
 
 @app.route("/logger/user/update", methods=["POST"])

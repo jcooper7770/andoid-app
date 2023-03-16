@@ -1,0 +1,382 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** ">-->
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+  <!-- css libs -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pokemon.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Hello World</title>
+</head>
+
+<body>
+  <!-- my stuff -->
+  <div id="nav-placeholder"></div>
+  <!-- Settings -->
+  <br><br>
+  <div class="container">
+    <div class="card border-primary">
+      <div class="card-header text-center">
+        <h2 id="settings-header">User Settings for {{user}}</h2>
+      </div>
+      <div class="row card-body">
+        <div class="col-sm">
+          <!-- Change password -->
+          <div class="row">
+            <div class="col-sm-2">
+              <label>Change Password:</label>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label>Old password:</label>
+                </div>
+                <div class="col-sm-6">
+                  <input type="password" value="" class="form-control" name="old_password" placeholder="old password"
+                    id="old-password"><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <label>New password:</label>
+                </div>
+                <div class="col-sm-6">
+                  <input type="password" value="" class="form-control" name="new_password" placeholder="new password"
+                    id="new-password"><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-2">
+              <p class="card-text">Private (hide from leaderboards):</p>
+            </div>
+            <div class="col-sm-10">
+              <input class="yes-private" type="radio" id="yes" name="private" value="true">
+              <label for="yes">Yes, do not show data in leaderboards</label>
+
+              <br>
+              <input class="no-private" type="radio" id="no" name="private" value="false">
+              <label for="no">No, show data in leaderboards</label>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <p class="card-text">Expand all comments:</p>
+            </div>
+            <div class="col-sm-10">
+              <input class="yes-expand" type="radio" id="yes" name="expand" value="true">
+              <label for="yes">Yes, show all comments</label>
+
+              <br>
+              <input class="no-expand" type="radio" id="no" name="expand" value="false">
+              <label for="no">No, hide all comments</label>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <label for="compulsory">Compulsory:</label>
+            </div>
+            <div class="col-sm-10">
+              <input id="compulsory" type="text" value="{{user_data['compulsory']}}" class="form-control"
+                name="compulsory"><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <label for="optional">Optional:</label>
+            </div>
+            <div class="col-sm-10">
+              <input id="optional" type="text" value="{{user_data['optional']}}" class="form-control"
+                name="optional"><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn btn-primary" id="save">Save</button>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Options -->
+  <br><br>
+  <div class="container">
+    <div class="card border-primary">
+      <div class="card-header text-center">
+        <h2 id="user-options">User Options for {{user}}</h2>
+      </div>
+      <div class="row card-body">
+        <div class="col-sm">
+          <div class="row">
+            <div class="col-sm-2">
+              <h6>Data handling:</h6>
+            </div>
+            <div class="col-sm-5">
+              <p class="card-text">Save all your data into a csv</p>
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="export-from">From: </label>
+                </div>
+                <div class="col-sm">
+                  <input name="export-from" id="export-from" type="date" placeholder="mm/dd/yyyy" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="export-to">To: </label>
+                </div>
+                <div class="col-sm">
+                  <input name="export-to" id="export-to" type="date" placeholder="mm/dd/yyyy" />
+                </div>
+              </div>
+              <button class="btn btn-primary" id="export-data">Export Data</button>
+            </div>
+            <div class="col-sm-5">
+              <p class="card-text">Import data from a csv</p>
+              <button class="btn btn-primary">Import Data</button>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send messages to athletes -->
+    <br><br>
+    <div class="card border-primary">
+      <div class="card-header text-center">
+        <h2>Message Center</h2>
+      </div>
+      <div class="row card-body">
+        <div class="col-sm-6">
+          <div class="row"><b><u>Messages:</u></b></div>
+            <div class="row" style="overflow-y:scroll; height:100px;" id="messages">
+              <ul style="list-style-type: none;" id="message-list">
+              </ul>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary" type="submit" id="mark_read">Mark Read</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row"><b><u>Send Message to coach:</u></b></div>
+          <div class="row">
+              <textarea id="message" name="message" rows="5" cols="40" style="width:90%" form="messages"
+                placeholder="Input your message here"></textarea>
+              <button class="btn btn-primary" type="submit" id="submit-message">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br>
+
+  <script src="js/utils.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $("#export-data").click(function (e) {
+      e.preventDefault();
+      var fromText = $('#export-from').val();
+      var toText = $('#export-to').val();
+      var url = "/logger/user/export?from=" + fromText + "&to=" + toText;
+      location.href = encodeURI(url);
+    });
+    var name = sessionStorage.getItem("username");
+    if (name == null) {
+      location.href = "/login.html";
+    }
+    document.querySelector("#settings-header").innerText = `User settings for ${name}`;
+    document.querySelector("#user-options").innerText = `User options for ${name}`;
+
+    async function getUserData() {
+      var name = sessionStorage.getItem("username");
+      var url = `https://192.168.68.124:1234/logger/user2?name=${name}`
+      return await fetch(url, {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        //mode: "cors"
+        //mode: "no-cors"
+      }).then((response) => {
+        if (!response.ok) {
+          console.log("Error. Rejecting. ", response.status, "(", response.statusText, ")");
+          return Promise.reject()
+        }
+        return new Promise((resolve, reject) => {
+          //return resolve(response.text());
+          var respText = resolve(response.text());
+          console.log(`resp: ${respText}`);
+          //return resolve(response.json());
+          return JSON.parse(respText);
+        })
+      }).catch(
+        error => {
+          console.error("ERROR: ", error);
+          console.error("ERROR: ", error.stack);
+          return Promise.reject()
+        })
+    }
+
+    getUserData().then((data) => {
+      console.log(data);
+      var dataObj = JSON.parse(data);
+      document.querySelector("#compulsory").value = dataObj['user_data']['compulsory'];
+      document.querySelector("#optional").value = dataObj['user_data']['optional'];
+
+      // set private
+      var private = dataObj['user_data']['private'];
+      console.log(`private: ${private}`);
+      if (private == 1) {
+        document.querySelector(".yes-private").checked = true;
+        document.querySelector(".no-private").checked = false;
+      } else {
+        document.querySelector(".yes-private").checked = false;
+        document.querySelector(".no-private").checked = true;
+      }
+
+      // set expand comments
+      var expand = dataObj['user_data']['expand_comments'];
+      console.log(`expand: ${expand}. ${typeof expand}`);
+      if (expand == 1) {
+        document.querySelector(".yes-expand").checked = true;
+        document.querySelector(".no-expand").checked = false;
+      } else {
+        document.querySelector(".yes-expand").checked = false;
+        document.querySelector(".no-expand").checked = true;
+      }
+
+      // set messages
+      var messages = dataObj['messages'];
+      var msgList = document.querySelector("#message-list");
+      for (let i = 0; i < messages.length; i++) {
+        var msg = messages[i]['msg'];
+        var read = messages[i]['read'];
+        console.log(`msg: ${msg} ; read: ${read}`);
+        var li = document.createElement("li");
+        var input = document.createElement("input");
+        input.name = `message_${i}`;
+        input.type = "checkbox";
+        input.checked = read;
+        li.appendChild(input);
+        li.append(msg);
+
+        msgList.appendChild(li);
+      }
+
+    }).catch((err) => {
+      console.error(`ERROR: ${err}`);
+    });
+
+    // update profile
+    document.querySelector("#save").addEventListener('click', function (e) {
+      e.preventDefault();
+      var name = sessionStorage.getItem("username")
+      var expand = String(document.querySelector(".yes-expand").checked);
+      var private = String(document.querySelector(".yes-private").checked);
+      var body = JSON.stringify({
+        "name": name,
+        "old_password": document.querySelector("#old-password").value,
+        "new_password": document.querySelector("#new-password").value,
+        "compulsory": document.querySelector("#compulsory").value,
+        "optional": document.querySelector("#optional").value,
+        "expand": expand,
+        "private": private,
+      });
+      submitData(body, endpoint = "logger/user/update2").then((response) => {
+        var resp = JSON.stringify(response);
+        if (!response.success) {
+          console.log(`ERROR: ${response.error}`);
+          alert(`ERROR: ${response.error}`);
+        } else {
+          window.location.reload();
+        }
+      });
+    });
+
+    // mark messages as read
+    document.querySelector("#mark_read").addEventListener('click', function(e) {
+      var name = sessionStorage.getItem("username")
+      var bodyObj = {
+        "name": name
+      }
+
+      var msgList = document.querySelector("#message-list");
+      for (var li of msgList.children) {
+        var input = li.children[0];
+        if (input.checked) {
+          console.log(`Marked message as read: ${input.name}`);
+          bodyObj[input.name] = true;
+        }
+      }
+      var body = JSON.stringify(bodyObj);
+      submitData(body, endpoint = "logger/athlete/messages2").then((response) => {
+        var resp = JSON.stringify(response);
+        if (!response.success) {
+          console.log(`ERROR: ${response.error}`);
+          alert(`ERROR: ${response.error}`);
+        } else {
+          window.location.reload();
+        }
+      });
+
+    });
+   
+    // send message to coaches
+    document.querySelector("#submit-message").addEventListener('click', function(e) {
+      var name = sessionStorage.getItem("username")
+      var message = document.querySelector("#message").value;
+      var bodyObj = {
+        "name": name,
+        "message": message
+      }
+      var body = JSON.stringify(bodyObj);
+      submitData(body, endpoint = "logger/athlete/messages2").then((response) => {
+        if (!response.success) {
+          console.log(`ERROR: ${response.error}`);
+          alert(`ERROR: ${response.error}`);
+        } else {
+          window.location.reload();
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

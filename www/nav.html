@@ -1,4 +1,4 @@
- <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="index.html">
         <img src="img/newFlippinCoopLogo.png" alt="Logo" style="width:40px;">
     </a>
@@ -8,14 +8,15 @@
     <div class="collapse navbar-collapse" id="colNav">>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="pokemon.html" id="home">Home</a>
+                <a class="nav-link" href="home.html" id="home">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="logger.html">Logger</a>
+                <a class="nav-link" href="logger.html" id="logger-link">Logger</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about_trampoline.html">About</a>
             </li>
+            <!--
             <li class="nav-item">
             <a class="nav-link" href="/move_counts">Move Counts</a>
             </li>
@@ -25,14 +26,68 @@
             <li class="nav-item">
             <a class="nav-link" href="https://pvpoke.com/">PVPoke</a>
             </li>
+            -->
         </ul>
         <ul class="nav navbar-nav mx-auto abs-center-x">
             <li class="nav-item"><a class="navbar-brand disabled">Anti-Meta Team Generator!</a></li>
         </ul>
         <ul class="nav navbar-nav">
             <li class="nav-item">
-            <a class="nav-link" href="/login.html">Login</a>
+                <a class="nav-link" href="/login.html" id="login-link">Login</a>
+                <a class="nav-link" href="/login.html" id="logout-link" style="display: none;">Logout</a>
+            </li>
+            <li class="nav-item dropdown ml-auto" style="display: none;" id="user-stuff">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Hello {{user}}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/profile.html">User Profile</a></li>
+                    <li><a class="dropdown-item" href="/stats.html">User Statistics</a></li>
+                </ul>
             </li>
         </ul>
     </div>
 </nav>
+<!--
+<div class="spinner-container">
+    <div class="spinner"></div>
+    <div class="spinner-text">Submitting data...</div>
+    <button id="spinner-close" class="spinner-close" aria-label="Close" href="#">
+        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M10.894 9l6.553-6.553a1 1 0 1 0-1.414-1.414L9.48 7.586 2.928 1.034a1 1 0 0 0-1.414 1.414L7.066 9 .514 15.553a1 1 0 0 0 1.414 1.414L9 10.414l6.553 6.553a1 1 0 0 0 1.414-1.414L10.894 9z"
+                fill-rule="evenodd"></path>
+        </svg>
+    </button>
+</div>
+-->
+<script>
+    // If the user has logged in then switch the login to logout
+    if (sessionStorage.getItem("username") != null) {
+        var name = sessionStorage.getItem("username");
+        document.querySelector("#login-link").style.display = "none";
+        document.querySelector("#logout-link").style.display = "block";
+        document.querySelector("#user-stuff").style.display = "block";
+        document.querySelector("#user-stuff > a").innerText = `Hello ${name}`;
+    }
+    document.querySelector("#logout-link").addEventListener('click', function (e) {
+        e.preventDefault();
+        sessionStorage.removeItem("username");
+        document.querySelector("#login-link").style.display = "block";
+        document.querySelector("#logout-link").style.display = "none";
+        document.querySelector("#user-stuff").style.display = "none";
+        location.href = "/login.html";
+    });
+
+    // Prevent the user from using the logger if they haven't logged in yet
+    document.querySelector("#logger-link").addEventListener('click', function (e) {
+        e.preventDefault();
+        if (sessionStorage.getItem("username") == null) {
+            alert("Please login first");
+            location.href = "/login.html";
+        } else {
+            location.href = "/logger.html";
+        }
+    });
+</script>
