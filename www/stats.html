@@ -62,25 +62,17 @@
       <div class="card-body">
 
         <div class="tab-content" id="canvas-tab">
-          <!--
-          {% for event in datapts.keys() %}
-          <div class="tab-pane fade{% if loop.first %}show active{% endif %}" id="{{ event }}" role="tabpanel"
-            aria-labelledby="{{ event }}-tab">
-            <canvas class="mx-auto" id="{{event}}Canvas" width="900" height="500"></canvas>
-          </div>
-          {% endfor %}
-          -->
+        </div>
+        <br>
+        <div class="float-end">
+          Start: <input id="chart-start" name="chart-start" type="date" placeholder="mm/dd/yyyy" value="{{chart_start}}"
+            \>
+          End: <input id="chart-end" name="chart-end" type="date" placeholder="mm/dd/yyyy" value="{{chart_end}}" \>
+          <button class="btn btn-primary" id="chart-dates">Update</button>
           <br>
-          <div class="float-right">
-            Start: <input id="chart-start" name="chart-start" type="date" placeholder="mm/dd/yyyy"
-              value="{{chart_start}}" \>
-            End: <input id="chart-end" name="chart-end" type="date" placeholder="mm/dd/yyyy" value="{{chart_end}}" \>
-            <button class="btn btn-primary" id="chart-dates">Update</button>
-            <br>
-            Show lines:
-            yes: <input type="radio" id="chart-lines-yes" name="chart-lines" value="yes" \>
-            no: <input type="radio" id="chart-lines-no" name="chart-lines" value="no" checked \>
-          </div>
+          Show lines:
+          yes: <input type="radio" id="chart-lines-yes" name="chart-lines" value="yes" \>
+          no: <input type="radio" id="chart-lines-no" name="chart-lines" value="no" checked \>
         </div>
       </div>
     </div>
@@ -138,18 +130,35 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="js/utils.js"></script>
+  <script src="js/stats2.js"></script>
   <!--<script src="js/stats.js"></script>-->
   <script>
+    /*
     document.addEventListener('DOMContentLoaded', function (e) {
-      document.querySelector('.spinner-container').style.display = "none";
-      // send request to get stats data (stats and charts)
+      //document.querySelector('.spinner-container').style.display = "none";
       showSpinner("Loading data...");
       load();
+      // send request to get stats data (stats and charts)
       getData().then((data) => {
         console.log(data);
         // fill charts
       }).catch((err) => {
         console.error(`ERROR: ${err}`);
+
+        document.querySelector("#chart-lines-yes").addEventListener('click', function (e) {
+          for (item of chartMap) {
+            var chart = item[1];
+            chart.data.datasets[0].showLine = true;
+            chart.update();
+          }
+        });
+        document.querySelector("#chart-lines-no").addEventListener('click', function (e) {
+          for (item of chartMap) {
+            var chart = item[1];
+            chart.data.datasets[0].showLine = false;
+            chart.update();
+          }
+        });
       });
       document.querySelector('.spinner-container').style.display = "none";
     });
@@ -278,17 +287,17 @@
       var tab = document.querySelector("#canvas-tab");
       var tablist = document.querySelector("#charts-list");
       var num = 0;
-      for([event, data] of Object.entries(datapts)) {
+      for ([event, data] of Object.entries(datapts)) {
         // add tab
         var navTab = document.createElement("li");
         navTab.classList = "nav-item";
         var a = document.createElement("button");
         if (num == 0) {
-            a.classList = "nav-link active";
-            a.setAttribute("aria-selected", true);
+          a.classList = "nav-link active";
+          a.setAttribute("aria-selected", true);
         } else {
-            a.classList = "nav-link"
-            a.setAttribute("aria-selected", false);
+          a.classList = "nav-link"
+          a.setAttribute("aria-selected", false);
         }
         a.href = `#${event}`;
         a.setAttribute('data-bs-toggle', 'tab');
@@ -300,12 +309,12 @@
         a.innerText = event;
         navTab.appendChild(a);
         tablist.appendChild(navTab);
-      
+
         var div = document.createElement("div");
-        if (num == 0){
-            div.classList = "tab-pane fade show active";
+        if (num == 0) {
+          div.classList = "tab-pane fade show active";
         } else {
-            div.classList = "tab-pane fade";
+          div.classList = "tab-pane fade";
         }
         div.id = event;
         div.setAttribute("role", "tabpanel");
@@ -317,7 +326,6 @@
         canvas.width = "900";
         canvas.height = "500";
         num += 1;
-        //const ctx = document.getElementById(`${event}Canvas`).getContext('2d');
         const ctx = canvas.getContext('2d');
         var dataList = []
         for (entry of data) {
@@ -325,10 +333,9 @@
             x: entry.x,
             y: entry.y
           }
-          console.log(entry);
-          console.log(line);
           dataList.push(line);
         }
+        var borderColor = event.startsWith('dmt') ? 'rgba(255, 99, 132, 1)' : 'rgba(99, 99, 255, 1)';
         var myChart = new Chart(ctx, {
           type: 'scatter',
           data: {
@@ -338,7 +345,7 @@
                 data: dataList,
                 showLine: false,
                 fill: false,
-                borderColor: 'rgba(255, 99, 132, 1)' ? event.startsWith("dmt") : 'rgba(99, 99, 255, 1)',
+                borderColor: borderColor,
               }
             ]
           },
@@ -357,8 +364,49 @@
         chartMap.set(event, myChart);
         div.appendChild(canvas);
         tab.appendChild(div);
+
+
+
       }
     }
+
+    function showSpinner(text) {
+      var spinnerText = document.querySelector('.spinner-text');
+      var textContent = text || "Loading...";
+      spinnerText.textContent = textContent;
+
+      // add css for each letter to cause a delay
+      var spanCount = textContent.length;
+      var spanCSS = "";
+      for (var i = 1; i <= spanCount; i++) {
+        var delay = (i - 1) * 0.1;
+        spanCSS += `.spinner-text span:nth-child(${i}) { animation-delay: ${delay}s; } `;
+      }
+      var styleElement = document.querySelector("style[type='text/css']");
+      if (styleElement == null) {
+        alert("Cannot create loading spinner");
+        return
+      }
+      styleElement.insertAdjacentHTML('beforeend', spanCSS);
+
+      // move each letter into a span element
+      var chars = text.split('');
+      var wrappedChars = chars.map(function (char) {
+        return '<span>' + char + '</span>';
+      });
+      spinnerText.innerHTML = wrappedChars.join('');
+
+      // make the spinner visible
+      var spinnerContainer = document.querySelector(".spinner-container");
+      spinnerContainer.style.display = "flex";
+
+      // allow spinner to be closed
+      var spinnerClose = document.getElementById("spinner-close");
+      spinnerClose.addEventListener("click", function () {
+        spinnerContainer.style.display = "none";
+      });
+    }
+    */
   </script>
 </body>
 
